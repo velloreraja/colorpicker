@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.mainbody {
+  background-color: #f5f5f5;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.choose_col_pickway {
+  width: 80vw;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.choose_col_pickway .color_flipper {
+  color: rgb(243, 164, 73);
+}
+.choose_col_pickway a {
+  text-decoration: none;
+  color: rgb(58, 53, 53);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.choose_col_pickway .simple_hex {
+  padding-left: 15px;
+}
+.choose_col_pickway .active {
+  color: rgb(0, 190, 253);
+  padding-left: 15px;
+}
+
+.mainbox {
+  position: relative;
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+.colorname {
+  background-color: rgb(43, 40, 40);
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+  align-items: center;
+  text-transform: capitalize;
+}
+.colorname span {
+  text-decoration: none;
+  color: rgb(95, 174, 223);
+}
+#random_color {
+  background-color: transparent;
+  padding: 6px 22px;
+  font-size: 18px;
+  border: 2px solid rgb(45, 0, 248);
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  outline: 2px solid rgb(179, 176, 176);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+/* #random_color:hover {
+  background-color: rgb(245, 243, 243);
+} */
